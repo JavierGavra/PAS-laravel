@@ -6,13 +6,11 @@
 	<title>JalanIn</title>
 	<link rel="stylesheet" href="style.css">
 
-	<link rel="stylesheet"
-  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<!--header--->
@@ -22,9 +20,9 @@
 
 		<ul class="navbar">
 			<li><a href="#home">Home</a></li>
-			<li><a href="#package">Package</a></li>
-			<li><a href="#destination">Destination</a></li>
-			<li><a href="#contact">Contact Us</a></li>
+			<li><a href="#package">Paket</a></li>
+			<li><a href="#destination">Destinasi</a></li>
+			<li><a href="#contact">Hubungi Kami</a></li>
 		</ul>
 	</header>
 
