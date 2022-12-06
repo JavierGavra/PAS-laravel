@@ -24,8 +24,8 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         
-        Country::factory(3)->create();
+        Country::factory(5)->create();
         Destination::factory(5)->create();
-        Bureau::factory(3)->create();
+        Bureau::factory(5)->create();
     }
 }

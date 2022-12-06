@@ -29,14 +29,14 @@
 	<!--Home section--->
 	<section class="home" id="home">
 		<div class="home-text">
-			<h1>Wisata Dunia<br>Nyaman</h1>
-			<p>Pilih destinasi wisata anda dan Nikmati perjalanan<br> keseluruh dunia dengan nyaman dan aman.</p>
-			<a href="#" class="home-btn">Mulai Sekarang	</a>
+			<h1>Selamat Datang<br>Admin</h1>
+			<p>Akses semua fitur dengan akses dari admin,<br> website ini sekarang ada di genggamanmu.</p>
+			<a href="#first" class="home-btn">Mulai Sekarang	</a>
 		</div>
 	</section>
 
 	<!--container--->
-	<section class="container">
+	<section class="container" id="first">
 		<div class="text">
 			<h2>Mulai perjalananmu <br>dengan berbagai pelayanan!</h2>
 		</div>
@@ -63,7 +63,7 @@
 					<img src="img/trip3.png">
 				</div>
 				<h4>Musim Panas</h4>
-				<p>7 Properti</p>
+				<p>70 Properti</p>
 			</div>
 
 			<div class="container-box">
@@ -152,37 +152,23 @@
 
 	<!--destination section--->
 	<section class="destination" id="destination">
-		<div class="title">
+		<div class="title-destination-admin">
 			<h2>Rekomendasi Destinasi <br> Dari Kami</h2>
 		</div>
-
-		<div class="destination-content">
+		<a class="crud-btn" href="/create">Tambah Destinasi</a>
+		<div class="destination-content-admin">
 			@foreach ($destinations as $item)
 				<div class="col-content">
 					<img src="img/img-1.jpg">
 					<h5>{{ $item->tujuan }}</h5>
 					<p>{{ $item->harga }}</p>
 				</div>
+
 			@endforeach
 		</div>
 	</section>
 
 	<br><br><br><br><br>
-
-	<!--Newsletter--->
-	{{-- <section class="newsletter">
-		<div class="news-text">
-			<h2>Newsletter</h2>
-			<p>Subscribe For more HTML, CSS, and <br> coding tutorials</p>
-		</div>
-
-		<div class="send">
-			<form>
-				<input type="email" placeholder="Write Your Email" required>
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-	</section> --}}
 
 	<!--footer--->
 	<section id="contact">

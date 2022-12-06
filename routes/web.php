@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CountryController;
+use App\Http\Controllers\DestinationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,4 +14,10 @@ use App\Http\Controllers\CountryController;
 |
 */
 
-Route::get('/', [CountryController::class, 'index']);
+// for Admin
+Route::get('/admin12345', [DestinationController::class, 'indexAdmin']);
+Route::get('/create', [DestinationController::class, 'create']);
+Route::post('/add', [DestinationController::class, 'store']);
+
+// for User
+Route::get('/', [DestinationController::class, 'index']);
