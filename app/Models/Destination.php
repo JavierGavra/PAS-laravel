@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Destination extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id']; 
+
+    public function wilayah()
+    {
+        return $this->belongsTo(Country::class);
+    }
+
+    public function biro()
+    {
+        return $this->belongsTo(Bureau::class);
+    }
 }
