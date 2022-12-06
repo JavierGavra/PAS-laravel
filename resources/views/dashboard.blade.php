@@ -31,16 +31,16 @@
 	<!--Home section--->
 	<section class="home" id="home">
 		<div class="home-text">
-			<h1>Fuel Mind <br> Travel</h1>
-			<p>Enthusiastically extend extensive customer service before <br> best breed convergence completely.</p>
-			<a href="#" class="home-btn">Let's go now</a>
+			<h1>Wisata Dunia<br>Nyaman</h1>
+			<p>Pilih destinasi wisata anda dan Nikmati perjalanan<br> keseluruh dunia dengan nyaman dan aman.</p>
+			<a href="#" class="home-btn">Mulai Sekarang	</a>
 		</div>
 	</section>
 
 	<!--container--->
 	<section class="container">
 		<div class="text">
-			<h2>Start Your Vacation <br> with Lots of Services!</h2>
+			<h2>Mulai perjalananmu <br>dengan berbagai pelayanan!</h2>
 		</div>
 
 		<div class="row-items">
@@ -240,21 +240,21 @@
 				</div>
 
 				<div class="list">
-					<h4>Contact Info</h4>
+					<h4>Kontak Kami</h4>
 					<ul>
-						<li><a href="#">98 West 21th Street</a></li>
-						<li><a href="#">New York NY 10016</a></li>
-						<li><a href="#">+1(123)-456-7890</a></li>
+						<li><a href="#">Desa Besito, Gebog</a></li>
+						<li><a href="#">SMK Raden Umar Said</a></li>
+						<li><a href="#">+62 895354880006</a></li>
 						<li><a href="#">info@mydomain.com</a></li>
 						<li><a href="#">+1(123)-456-7890</a></li>
 					</ul>
 				</div>
 
 				<div class="list">
-					<h4>Connect</h4>
+					<h4>Sosmed</h4>
 					<div class="social">
 						<a href="#"><i class='bx bxl-facebook' ></i></a>
-						<a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+						<a href="https://www.instagram.com/its_arayy/"><i class='bx bxl-instagram-alt' ></i></a>
 						<a href="#"><i class='bx bxl-twitter' ></i></a>
 						<a href="#"><i class='bx bxl-linkedin' ></i></a>
 					</div>
@@ -263,7 +263,7 @@
 		</div>
 
 		<div class="end-text">
-			<p>Copyright ©2022 All rights reserved | Made with by Tahmid Ahmed</p>
+			<p>Copyright ©2022 All rights reserved | Made with by Rasyid&Gavra</p>
 		</div>
 	</section>
 
