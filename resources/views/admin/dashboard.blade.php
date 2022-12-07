@@ -162,7 +162,11 @@
 					<img src="img/img-1.jpg">
 					<h5>{{ $item->tujuan }}</h5>
 					<p>{{ $item->harga }}</p>
-				</div>
+					<ul>
+						<a href="https://www.youtube.com/watch?v=cUWBYzA6M-8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=4">Edit</a>
+						<a href="https://www.youtube.com/watch?v=cUWBYzA6M-8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=4">Hapus</a>
+					</ul>
+				</div>	
 
 			@endforeach
 		</div>
