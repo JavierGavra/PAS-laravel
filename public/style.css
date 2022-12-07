@@ -241,13 +241,36 @@ header.sticky{
 .destination-content-admin{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(340px, auto));
-	grid-gap: 2rem;
+	grid-gap: 3rem;
 	align-items: center;
-	margin-top: 1rem;
+	margin-top: 3rem;
 }
 .col-content{
 	position: relative;
 }
+
+
+.col-content ul a{
+	background-color: transparent;
+	color:#6e54fa;
+	border: 2px solid #6e54fa;
+	border-radius: 15px;
+	display: inline-table;
+	width: 10%;
+	margin-top: 7px;
+	padding: 12px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align: center;
+	transition: 0.2s;
+}
+
+.col-content ul a:hover {
+	background-color:#6e54fa;
+	color:#f0eded;
+	border: 2px solid transparent;
+}
+
 .col-content img{
 	width: 476px;
 	height: 440px;
@@ -263,14 +286,14 @@ header.sticky{
 	font-weight: 500;
 	color: var(--bg-color);
 	left: 15px;
-	bottom: 60px;
+	bottom: 110px;
 }
 .col-content p{
 	position: absolute;
 	font-size: 15px;
 	color: var(--bg-color);
 	left: 15px;
-	bottom: 30px;
+	bottom: 80px;
 	letter-spacing: 2px;
 }
 .col-content img:hover{
