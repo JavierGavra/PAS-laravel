@@ -33,14 +33,19 @@ class DestinationController extends Controller
 
     public function store(Request $request)
     {
+
         $validateData = $request->validate([
             'tujuan' => 'required|max:255',
             'id_wilayah' => 'required',
             'id_biro' => 'required',
             'deskripsi' => 'required|max:255',
             'harga' => 'required',
-            'gambar_tujuan' => 'required'
+            'gambar_tujuan' => 'image|file|max:15360'
         ]);
+
+        if ($request->file('gambar_tujuan')) {
+            $validateData['gambar_tujuan'] = $request->file('gambar_tujuan')->store('images');
+        }
 
         Destination::create($validateData);
         return redirect('/admin12345')->with('success', 'Destination has been added !');

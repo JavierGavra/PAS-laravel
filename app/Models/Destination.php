@@ -11,7 +11,7 @@ class Destination extends Model
 
     protected $guarded = ['id']; 
 
-    public function wilayah()
+    public function country()
     {
         return $this->belongsTo(Country::class);
     }
