@@ -51,4 +51,37 @@ class DestinationController extends Controller
         return redirect('/admin12345')->with('success', 'Destination has been added !');
     }
 
+    public function destroy(Destination $destination)
+    {
+        Destination::destroy($destination->id);
+        return redirect('/admin12345')->with('success', 'Data has been deleted !');
+    }
+
+    public function edit(Destination $destination)
+    {
+        return view('admin.edit', [
+            'country' => Country::all(),
+            'bureau' => Bureau::all(),
+            'destination' => $destination
+        ]);
+    }
+
+    public function update(Request $request, Destination $destination)
+    {
+        $validateData = $request->validate([
+            'tujuan' => 'required|max:255',
+            'id_wilayah' => 'required',
+            'id_biro' => 'required',
+            'deskripsi' => 'required|max:255',
+            'harga' => 'required',
+            'gambar_tujuan' => 'image|file|max:15360'
+        ]);
+
+        if ($request->file('gambar_tujuan')) {
+            $validateData['gambar_tujuan'] = $request->file('gambar_tujuan')->store('images');
+        }
+        
+        Destination::where('id', $destination->id)->update($validateData);
+        return redirect('/admin12345')->with('success', 'Book has been Updated !');
+    }
 }
