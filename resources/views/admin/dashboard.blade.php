@@ -159,9 +159,9 @@
 		<div class="destination-content-admin">
 			@foreach ($destinations as $item)
 				<div class="col-content">
-					<img src="img/img-1.jpg">
+					<img src="{{ asset('storage/' . $item->gambar_tujuan) }}">
 					<h5>{{ $item->tujuan }}</h5>
-					<p>{{ $item->harga }}</p>
+					<p>Rp. {{ $item->harga }}</p>
 				</div>
 
 			@endforeach
