@@ -245,6 +245,7 @@ header.sticky{
 	align-items: center;
 	margin-top: 3rem;
 }
+
 .col-content{
 	position: relative;
 }
@@ -282,12 +283,13 @@ header.sticky{
 
 .col-content-admin{
 	position: relative;
+	margin: 30px;
 }
 
 .col-content-admin img{
 	width: 476px;
 	height: 440px;
-	object-fit: cover;
+	object-fit: fill;
 	border-radius: 15px;
 	filter: brightness(80%);
 	transition: all .3s cubic-bezier(.495,.05,.55,.95);
@@ -298,15 +300,15 @@ header.sticky{
 	font-size: 22px;
 	font-weight: 500;
 	color: var(--bg-color);
-	left: 15px;
-	bottom: 110px;
+	left: 30px;
+	bottom: 80px;
 }
 .col-content-admin p{
 	position: absolute;
 	font-size: 15px;
 	color: var(--bg-color);
-	left: 15px;
-	bottom: 80px;
+	left: 30px;
+	bottom: 50px;
 	letter-spacing: 2px;
 }
 .col-content-admin img:hover{
@@ -314,6 +316,7 @@ header.sticky{
 	transform: scale(1.04);
 	cursor: pointer;
 }
+
 
 .newsletter{
 	display: flex;
@@ -372,17 +375,14 @@ header.sticky{
 	text-align: center;
 	transition: 0.2s;
 }
-.create-btn:hover{
-	background-color:#6e54fa;
-	color:#f0eded;
-	border: 2px solid transparent;
-}
+
 .edit-btn{
 	background-color: transparent;
 	color:orange;
 	border: 2px solid orange;
 	border-radius: 15px;
 	display: inline-table;
+	position: absolute;
 	margin-top: 7px;
 	padding: 12px 28px;
 	font-size: 16px;
@@ -390,24 +390,35 @@ header.sticky{
 	text-align: center;
 	transition: 0.2s;
 }
-.edit-btn:hover{
-	background-color:orange;
-	color:#f0eded;
-	border: 2px solid transparent;
-}
+
 .delete-btn{
 	background-color: transparent;
 	color:red;
 	border: 2px solid red;
 	border-radius: 15px;
-	display: inline-table;
+	display: block;
 	margin-top: 7px;
+	margin-left: 25%;
+	position: absolute;
 	padding: 12px 28px;
 	font-size: 16px;
 	cursor: pointer;
 	text-align: center;
 	transition: 0.2s;
 }
+
+.create-btn:hover{
+	background-color:#6e54fa;
+	color:#f0eded;
+	border: 2px solid transparent;
+}
+
+.edit-btn:hover{
+	background-color:orange;
+	color:#f0eded;
+	border: 2px solid transparent;
+}
+
 .delete-btn:hover{
 	background-color:red;
 	color:#f0eded;
