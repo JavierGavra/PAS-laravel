@@ -43,7 +43,7 @@
                                 </select>
                             </div><br>
                             <div class="form-group">
-                                <label for="publisher">Wilayah</label>
+                                <label for="publisher">Biro</label>
                                 <select class="form-select" name="id_biro" id="">
                                     @foreach ($bureau as $item)
                                     @if (old('id_biro', $destination->id_biro == $item->id))
