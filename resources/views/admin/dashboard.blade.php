@@ -155,16 +155,20 @@
 		<div class="title-destination-admin">
 			<h2>Rekomendasi Destinasi <br> Dari Kami</h2>
 		</div>
-		<a class="crud-btn" href="/create">Tambah Destinasi</a>
+		<a class="create-btn" href="/create">Tambah Destinasi</a>
 		<div class="destination-content-admin">
 			@foreach ($destinations as $item)
-				<div class="col-content">
+				<div class="col-content-admin">
 					<img src="{{ asset('storage/' . $item->gambar_tujuan) }}">
 					<h5>{{ $item->tujuan }}</h5>
 					<p>Rp. {{ $item->harga }}</p>
 					<ul>
-						<a href="https://www.youtube.com/watch?v=cUWBYzA6M-8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=4">Edit</a>
-						<a href="https://www.youtube.com/watch?v=cUWBYzA6M-8&list=PLFIM0718LjIVuONHysfOK0ZtiqUWvrx4F&index=4">Hapus</a>
+						<a class="edit-btn" href="/edit/{{ $item->id }}">Edit</a>
+						<form action="/delete/{{ $item->id }}" method="post" class="d-inline">
+							@method('delete')
+							@csrf
+							<button class="delete-btn" onclick="return confirm('Are you sure?')">Hapus</button>
+						</form>
 					</ul>
 				</div>	
 			@endforeach
