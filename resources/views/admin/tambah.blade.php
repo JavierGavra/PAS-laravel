@@ -24,7 +24,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h2 align="center">Tambah Destinasi</h2>
-                        <form action="/add" method="post">
+                        <form action="/add" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label for="nama">Tujuan</label>
@@ -56,7 +56,7 @@
                             </div><br>
                             <div class="form-group">
                                 <label for="pengarang">Gambar</label>
-                                <input type="text" class="form-control" name="gambar_tujuan" id="gambar_tujuan" placeholder="Masukkan gambar : " required value="{{ old('gambar_tujuan') }}">
+                                <input type="file" class="form-control" name="gambar_tujuan" id="gambar_tujuan" placeholder="Masukkan gambar : " required value="{{ old('gambar_tujuan') }}">
                             </div><br>
                             <button type="submit" class="btn btn-primary float-end" name="submit">Simpan Data</button>
                         </form>          
