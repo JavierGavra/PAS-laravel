@@ -22,29 +22,33 @@ body{
 }
 
 header{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	width: 100%;
 	z-index: 1000;
 	display: flex;
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 30%);
 	align-items: center;
 	justify-content: space-between;
-	background: transparent;
-	padding: 30px 18%;
+	background: white;	
+	padding: 10px 18%;
 	transition: ease .40s;
 }
+
+
+
 .logo{
 	font-size: 35px;
 	font-weight: 600;
 	letter-spacing: 1px;
-	color: var(--bg-color);
+	color: #6e54fa;
 }
 .navbar{
 	display: flex;
 }
 .navbar a{
-	color: var(--bg-color);
+	color: #6e54fa;
 	font-size: var(--p-font);
 	font-weight: 500;
 	padding: 10px 22px;
@@ -55,7 +59,7 @@ header{
 	background: var(--bg-color);
 	color: var(--text-color);
 	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
-	border-radius: 4px;
+	border-radius: 8px;
 }
 #menu-icon{
 	color: var(--bg-color);
@@ -276,7 +280,7 @@ header.sticky{
 	letter-spacing: 2px;
 }
 .col-content img:hover{
-	filter: brightness(100%) hue-rotate(45deg);
+	filter: brightness(100%);
 	transform: scale(1.04);
 	cursor: pointer;
 }
@@ -284,13 +288,14 @@ header.sticky{
 .col-content-admin{
 	position: relative;
 	margin: 30px;
+	right: 28px;
 }
 
 .col-content-admin img{
-	width: 476px;
+	width: 460px;
 	height: 440px;
 	object-fit: fill;
-	border-radius: 15px;
+	border-radius: 25px;
 	filter: brightness(80%);
 	transition: all .3s cubic-bezier(.495,.05,.55,.95);
 	will-change: filter;
@@ -312,7 +317,7 @@ header.sticky{
 	letter-spacing: 2px;
 }
 .col-content-admin img:hover{
-	filter: brightness(100%) hue-rotate(45deg);
+	filter: brightness(100%);
 	transform: scale(1.04);
 	cursor: pointer;
 }
