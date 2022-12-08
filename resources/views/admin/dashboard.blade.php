@@ -11,6 +11,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 	<!--header--->
@@ -227,7 +228,7 @@
 		</div>
 
 		<div class="end-text">
-			<p>Copyright ©2022 All rights reserved | Made with by Rasyid&Gavra</p>
+			<p>Copyright ©2022 All rights reserved | Made with by Rasyid & Gavra</p>
 		</div>
 	</section>
 
