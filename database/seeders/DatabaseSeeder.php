@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Country;
+use App\Models\Destination;
+use App\Models\Bureau;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,5 +23,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        
+        Country::factory(5)->create();
+        Destination::factory(5)->create();
+        Bureau::factory(5)->create();
     }
 }

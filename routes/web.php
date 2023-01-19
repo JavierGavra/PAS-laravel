@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DestinationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// for Admin
+Route::get('/admin12345', [DestinationController::class, 'indexAdmin']);
+Route::get('/create', [DestinationController::class, 'create']);
+Route::post('/add', [DestinationController::class, 'store']);
+Route::delete('/delete/{destination}', [DestinationController::class, 'destroy']);
+Route::get('/edit/{destination}', [DestinationController::class, 'edit']);
+Route::post('/update/{destination}', [DestinationController::class, 'update']);
+
+// for User
+Route::get('/', [DestinationController::class, 'index']);
